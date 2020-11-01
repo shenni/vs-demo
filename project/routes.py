@@ -13,3 +13,7 @@ def login():
 @app.route('/logout', methods=['POST','GET'])
 def logout():
     return redirect('login')
+
+@app.route('/style', methods=['POST','GET'])
+def style():
+    return render_template('Style.html') 
